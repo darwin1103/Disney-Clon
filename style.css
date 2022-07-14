@@ -1,0 +1,448 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 6.25%;
+}
+
+:root {
+    --purpple-principal: #6421ff;
+    --general-background: #050714;
+    --gray-text: #a8a8aa;
+    --gray-accordeon: #13151d;
+ }
+
+ @font-face {
+    font-family: 'Avenir';
+    src: url('./fonts/Metropolis-Regular.otf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Avenir';
+    src: url('./fonts/Metropolis-Bold.otf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+  }
+
+/*Header*/
+  header .button-container {
+    background-color: transparent;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+  }
+  header .button-container button {
+    background-color: rgba(0,0,0,.8);
+    font-family: 'Avenir';
+    font-size: 18rem;  
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 0px 16px;
+    height: 50px;
+    margin: 0px 30px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  header .button-container button:hover {
+    background-color: white;
+    color: var(--general-background);
+  }
+
+/*Hero Section*/
+main .hero-section {
+    background-image: url(./media/hero-background-desktop.jpg);
+    background-color: var(--general-background);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 75px;
+}
+main .hero-section .hero-section-container {
+    width: 50%;
+    max-width: 700PX;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .hero-section .hero-section-container h3 {
+    font-family: 'Avenir';
+    font-weight: 700;
+    font-size: 28rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 24px;
+}
+main .hero-section .hero-section-container img {
+    width: 320px;
+    margin: 0 auto;
+}
+main .hero-section .hero-section-container button {
+    background-color: var(--purpple-principal);
+    font-family: 'Avenir';
+    font-weight: 500;
+    font-size: 18rem;  
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0px 16px;
+    height: 65px;
+    margin: 0 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+/*Plans Section*/
+main .plan-section {
+  background-color: var(--general-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5.6vw;
+}
+main .plan-section .tittle-plan {
+  font-family: 'Avenir';
+  font-weight: 700;
+  font-size: 44rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+main .plan-section .module-plan-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+main .plan-section .module-plan-container .module-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 380px;
+  width: 100%;
+  padding: 0 44px;
+  padding-top: 60px;
+}
+main .plan-section .module-plan-container .module-plan__background {
+  background-image: url(./media/background-plan2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .plan-section .module-plan-container .module-plan img {
+  width: 100%;
+}
+main .plan-section .module-plan-container .module-plan h3 {
+  font-family: 'Avenir';
+  font-weight: 700;
+  font-size: 28rem;
+  color: white;
+  text-align: center;
+  margin-top: 24px;
+}
+main .plan-section .module-plan-container .module-plan p {
+  font-family: 'Avenir';
+  font-weight: 400;
+  font-size: 18rem;
+  color: var(--gray-text);
+  text-align: center;
+  margin-top: 10px;
+}
+main .plan-section .module-plan-container .module-plan button {
+  background-color: var(--purpple-principal);
+  font-family: 'Avenir';
+  font-weight: 500;
+  font-size: 18rem;  
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0px 16px;
+  height: 65px;
+  width: 100%;
+  margin: 0 30px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+main .plan-section .text-plan {
+  font-family: 'Avenir';
+  font-weight: 400;
+  font-size: 12rem;
+  color: var(--gray-text);
+  text-align: center;
+  margin: 30px 0px;
+}
+
+/*Three Section*/
+main .three-section {
+  background-color: var(--general-background);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5.6vw;
+}
+main .three-section .container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+main .three-section .container img {
+  width: 100%;
+}
+main .three-section .container h2 {
+  font-family: 'Avenir';
+  font-weight: 700;
+  font-size: 40rem;
+  color: white;
+}
+main .three-section .container p {
+  font-family: 'Avenir';
+  font-weight: 400;
+  font-size: 20rem;
+  color: var(--gray-text);
+  margin-top: 24px;
+}
+
+/*Movie Section*/
+main .movie-section {
+  background-color: var(--general-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5.6vw;
+}
+main .movie-section h2 {
+  font-family: 'Avenir';
+  font-weight: 700;
+  font-size: 40rem;
+  color: white;
+  text-align: center;
+}
+main .movie-section p{
+  font-family: 'Avenir';
+  font-weight: 400;
+  font-size: 20rem;
+  color: var(--gray-text);
+  margin-top: 24px;
+  text-align: center;
+}
+main .movie-section .movie-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  justify-content: center;
+}
+main .movie-section .movie-container .movie-cont__border {
+  width: 33%;
+  padding: 12px;
+}
+main .movie-section .movie-container .movie-cont__border img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/*Download Section*/
+main .download-section {
+  background-color: var(--general-background);
+  display: flex;
+  padding: 5.6vw;
+}
+main .download-section .download-container {
+  background-image: url(./media/background-rey-leon.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+main .download-section .download-container .text-container {
+  width: 50%;
+  padding: 0 2vw;
+}
+main .download-section .download-container .text-container h3 {
+  font-family: 'Avenir';
+  font-weight: 700;
+  font-size: 28rem;
+  color: white;
+}
+main .download-section .download-container .text-container p {
+  font-family: 'Avenir';
+  font-weight: 400;
+  font-size: 20rem;
+  color: var(--gray-text);
+  margin-top: 24px;
+}
+
+/*Dispositive Section*/
+main .dispositive-section {
+  background-color: var(--general-background);
+  display: flex;
+  flex-direction: column;
+  padding: 5.6vw;
+  justify-content: center;
+}
+main .dispositive-section h2 {
+  font-family: 'Avenir';
+  font-weight: 700;
+  font-size: 40rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 24px;
+}
+main .dispositive-section .dispositive-blurb-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+main .dispositive-section .dispositive-blurb-container .dispositive-blurb {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 12px;
+}
+main .dispositive-section .dispositive-blurb-container .dispositive-blurb img {
+  width: 100%;
+}
+main .dispositive-section .dispositive-blurb-container .dispositive-blurb h3 {
+  font-family: 'Avenir';
+  font-weight: 700;
+  font-size: 28rem;
+  color: white;
+  text-align: center;
+}
+main .dispositive-section .dispositive-blurb-container .dispositive-blurb p {
+  font-family: 'Avenir';
+  font-weight: 400;
+  font-size: 18rem;
+  color: var(--gray-text);
+  margin-top: 24px;
+  text-align: center;
+}
+
+/*FAQ Section*/
+main .faq-section{
+  background-color: var(--general-background);
+  display: flex;
+  flex-direction: column;
+  padding: 5.6vw;
+  justify-content: center;
+}
+
+main .faq-section h2 {
+  font-family: 'Avenir';
+  font-weight: 700;
+  font-size: 40rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 24px;
+}
+main .faq-section .accordeon-container .accordeon-item {
+  background-color: var(--gray-accordeon);
+  margin-bottom: 16px;
+  padding: 24px;
+}
+main .faq-section .accordeon-container .accordeon-item .accordeon-link {
+  font-family: 'Avenir';
+  font-weight: 700;
+  font-size: 20rem;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .faq-section .accordeon-container .accordeon-item .accordeon-link span {
+  font-size: 40px;
+}
+main .faq-section .accordeon-container .accordeon-item .answer p{
+  font-family: 'Avenir';
+  font-weight: 400;
+  font-size: 18rem;
+  color: var(--gray-text);
+  line-height: 2em;
+}
+.accordeon-link .remove-icon {
+  display: none;
+}
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 650ms;
+}
+.accordeon-item:target .answer {
+  max-height: fit-content;
+}
+.accordeon-item:target .accordeon-link .more-icon {
+  display: none;
+}
+.accordeon-item:target .accordeon-link .remove-icon {
+  display: block;
+}
+
+/*Footer*/
+footer .footer-section {
+  background-color: var(--general-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 26px 8px;
+}
+footer .footer-section img {
+  width: 80px;
+}
+footer .footer-section .footer-link-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px auto;
+}
+footer .footer-section .footer-link-container .footer-link {
+  font-family: 'Avenir';
+  font-weight: 400;
+  font-size: 12rem;
+  color: var(--gray-text);
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+footer .footer-section .footer-link-container .footer-link:hover {
+  color: white;
+}
+footer .footer-section p {
+  font-family: 'Avenir';
+  font-weight: 400;
+  font-size: 12rem;
+  color: var(--gray-text);
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 12px;
+  margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+  main .download-section .download-container .text-container img {
+    display: none;
+  }
+}

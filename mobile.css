@@ -1,0 +1,139 @@
+
+/*Header*/
+header .button-container button {
+    font-size: 15rem;
+}
+
+
+/*Hero Section*/
+main .hero-section {
+    background-image: url(./media/hero-background-mobile.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    padding-top: 35vh;
+}
+main .hero-section .hero-section-container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .hero-section .hero-section-container h3 {
+    font-size: 22rem;
+}
+main .hero-section .hero-section-container img {
+    width: 180px;
+}
+main .hero-section .hero-section-container button {
+    font-size: 15rem;
+    height: 55px;
+    margin: 0px 0px;
+    margin-top: 30px;
+}
+
+/*Plans Section*/
+main .plan-section {
+    padding-top: 100px;
+}
+main .plan-section .tittle-plan {
+    font-size: 26rem;
+}
+main .plan-section .module-plan-container {
+    flex-direction: column;
+    align-items: center;
+}
+main .plan-section .module-plan-container .module-plan__background {
+    margin-top: 60px;
+}
+main .plan-section .module-plan-container .module-plan h3 {
+    font-size: 22rem;
+}
+main .plan-section .module-plan-container .module-plan p {
+    font-size: 15rem;
+}
+main .plan-section .module-plan-container .module-plan button {
+    font-size: 15rem;
+}
+
+/*Three Section*/
+main .three-section {
+    flex-direction: column;
+    padding: 10vw 5vw;
+}
+main .three-section .container {
+    width: 100%;
+    padding: 50px 0px;
+}
+main .three-section .container h2 {
+    font-size: 26rem;
+    text-align: center;
+}
+main .three-section .container p {
+    font-size: 16rem;
+    text-align: center;
+}
+
+/*Movie Section*/
+main .movie-section h2 {
+    font-size: 26rem;
+}
+main .movie-section p {
+    font-size: 16px;
+}
+main .movie-section .movie-container .movie-cont__border {
+    width: 50%;
+}
+
+/*Download Section*/
+main .download-section {
+    padding: 10vw 5vw;
+}
+main .download-section .download-container {
+    background-image: none;
+    height: auto;
+}
+main .download-section .download-container .text-container {
+    width: 100%;
+}
+main .download-section .download-container .text-container img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+main .download-section .download-container .text-container h3 {
+    font-size: 22rem;
+    text-align: center;
+}
+main .download-section .download-container .text-container p {
+    font-size: 15rem;
+    text-align: center;
+}
+
+/*Dispositive Section*/
+main .dispositive-section h2 {
+    font-size: 26rem;
+}
+main .dispositive-section .dispositive-blurb-container .dispositive-blurb h3 {
+    font-size: 22rem;
+}
+main .dispositive-section .dispositive-blurb-container .dispositive-blurb p {
+    font-size: 15rem;
+}
+main .dispositive-section .dispositive-blurb-container .dispositive-blurb {
+    width: 50%;
+}
+
+/*FAQ Section*/
+main .faq-section h2 {
+    font-size: 26rem;
+}
+main .faq-section .accordeon-container .accordeon-item .accordeon-link {
+    font-size: 15rem;
+}
+main .faq-section .accordeon-container .accordeon-item .answer p {
+    font-size: 15rem;
+}
